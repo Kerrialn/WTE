@@ -11,7 +11,7 @@ use Symplify\AutowireArrayParameter\DependencyInjection\CompilerPass\AutowireArr
 
 final class ApplicationKernel extends Kernel
 {
-    public function registerBundles(): array
+    public function registerBundles()
     {
         return [];
     }
