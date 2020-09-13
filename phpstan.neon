@@ -1,3 +1,7 @@
+# phpstan.neon
+includes:
+    - 'vendor/symplify/phpstan-extensions/config/config.neon'
+
 parameters:
 	level: 8
 	paths:

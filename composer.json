@@ -13,7 +13,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "nette/utils": "^3.1",
-        "symfony/console": "5.0.*",
+        "symfony/console": "5.1.5",
         "symfony/dependency-injection": "^5.0",
         "symfony/dotenv": "5.0.*",
         "symfony/finder": "^5.0",
@@ -54,7 +54,8 @@
         "check-cs": "vendor/bin/ecs check src tests --ansi",
         "fix-cs": "vendor/bin/ecs check src tests --ansi --fix",
         "phpstan": "vendor/bin/phpstan analyse --ansi --error-format symplify",
-        "rector": "vendor/bin/rector process --ansi"
+        "rector": "vendor/bin/rector process --ansi",
+        "rector-dry": "vendor/bin/rector process --dry-run --ansi"
     },
     "extra": {
         "symfony": {
