@@ -10,9 +10,9 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 use Symplify\PackageBuilder\Console\ShellCode;
 
-final class FindErrorCommand extends Command
+final class TestCommand extends Command
 {
-    public const NAME = 'find';
+    public const NAME = 'analyse';
 
     /**
      * @var SymfonyStyle
@@ -28,16 +28,18 @@ final class FindErrorCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output): int
     {
-        $inputError = $this->symfonyStyle->ask('What is your error?');
 
-        dump($inputError);
+
 
         return ShellCode::SUCCESS;
     }
 
-    protected function configure(): void
+    protected function configure(): array
     {
         $this->setName(self::NAME);
         $this->setDescription('Find an error');
     }
+
+
+
 }

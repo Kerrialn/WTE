@@ -3,10 +3,11 @@
 # What The Error!
 
 ## Introduction
-An error reference tool that explains errors so they are understandable to humans.
+An error reference tool that explains errors to be understood by humans.
 
 ## Installation
-- run `composer require kerrialn/WTE --dev`
+- run `composer require kerrialn/wte --dev`
 
 ## Usage
-- run `bin/wte find`
+ The example below will render the output of phpstan errors, replace the phpstan command with any you wish.
+`bin/wte analyse -c"vendor/bin/phpstan analyse"` 
