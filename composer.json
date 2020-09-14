@@ -51,11 +51,11 @@
         }
     },
     "scripts": {
-        "check-cs": "vendor/bin/ecs check src tests --ansi || bin/wte analyse",
-        "fix-cs": "vendor/bin/ecs check src tests --ansi --fix || bin/wte analyse",
-        "phpstan": "bin/wte analyse --vendor/bin/phpstan analyse",
-        "rector": "vendor/bin/rector process --ansi || bin/wte analyse",
-        "rector-dry": "vendor/bin/rector process --dry-run --ansi || bin/wte analyse"
+        "check-cs": "vendor/bin/ecs check src tests --ansi",
+        "fix-cs": "vendor/bin/ecs check src tests --ansi --fix",
+        "phpstan": "vendor/bin/phpstan analyse --ansi --error-format symplify",
+        "rector": "vendor/bin/rector process --ansi",
+        "rector-dry": "vendor/bin/rector process --dry-run --ansi"
     },
     "extra": {
         "symfony": {
